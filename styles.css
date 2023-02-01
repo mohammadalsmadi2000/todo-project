@@ -1,0 +1,205 @@
+header {
+    background-color: #ff7870;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+
+}
+
+header h1 {
+
+    font-size: 36px;
+    color: white;
+    margin: 0;
+
+}
+
+header nav ul li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header nav ul li a:hover {
+    color: darkgray;
+}
+
+ul {
+
+    display: flex;
+
+}
+
+header h1:hover {
+
+    color: #185abd;
+}
+.viewPort {
+    background-image: url(https://images.prismic.io/friday-marketing/f8d958b2-507e-495e-b54a-dd16cd251f2a_How+To+Make+a+Better+To-Do+List+FINAL+2%D1%85.png?auto=compress,format);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+   margin: 7px ;
+   border-radius: 5px;
+    
+  }
+  .table-task{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .table-task h1{
+    font-size: 24px;
+    margin: 20px;
+    font-family: 'Oswald', sans-serif;
+    color:#ff7870
+  }
+  table {
+    width: 30%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #ff7870;
+    color: white;
+  }
+
+.done{
+    background-color: green;
+   
+  }
+  .style-Td{
+    display: flex;
+    justify-content: space-between;
+  }
+  .why-use{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+  }
+  .card {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    margin: 20px;
+    float: left;
+    text-align: center;
+  }
+  
+  .card h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ff7870;
+  }
+  
+  .card p {
+    margin: 20px;
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+  }
+  
+  .card img {
+    width: 50%;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: inset;
+  }
+  footer {
+    background-color: #ff7870;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  footer img {
+    width: 50px;
+    margin-bottom: 20px;
+  }
+  
+  footer p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .footer a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: all 0.3s;
+  }
+  
+  .footer a:hover {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  a{
+    color: #1e90ff;
+    text-decoration: none
+  }
+  .personal-info img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  .personal-info{
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  #name{
+    font-size: 80px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+  }
+  .contactMe{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #contactLabel{
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+  }
+  form{
+    width: 80%;
+    height: 400px;
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: ; */
+    align-items: center;
+  }

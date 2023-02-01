@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <title>To Do</title>
 </head>
 
 <body>
     <header>
+
+        <img src="./assets/microsoft_todo.png">
         <h1>ToDo List</h1>
-        <img src="./assets/smadi.png">
         <nav>
+
             <ul>
                 <li>
                     <a href="/">Home</a>
@@ -27,39 +33,59 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="personal-info">
             <img src="/assets/b046a0a5-1c79-403c-b3ae-190c691719b0.jpg">
-            <h3>Mohammad Smadi</h3>
-            <p>"My name is Mohammad Alsmadi I am 22 year old ,
-                In the past 5 year i have been studying
-                as computer Engineering in yarmouk University,
-            </p>
+            <div style="display: flex;flex-direction: column; justify-content: center;">
+                <p id="name">Mohammad Alsmadi</p>
+
+                <p style="text-align: center;">"My name is Mohammad Alsmadi I am 22 year old ,
+                    <br> In the past 5 year i have been studying
+                    as computer Engineering in yarmouk University,
+                </p>
+            </div>
+
         </section>
 
-        <section>
+        <section class="contactMe">
+            <p id="contactLabel">Contact ME</p>
+
             <form>
-                <label>Name</label>
-                <input type="text" placeholder="ex:mohammad">
-                <br>
-                <label>Email</label>
-                <input type="text" placeholder="ex:test@test.com">
-                <br>
-                <label>message</label>
-                <textarea></textarea>
-                <br>
-                <input type="submit">
+                <div style="display: flex;align-items: center; padding: 10px; width: 400px;">
+                    <label style="margin-right: 30px;">Name : </label>
+                    <input style="height: 30px; width: 300px;" type="text" placeholder="ex:mohammad">
+                </div>
+                <div style="display: flex;align-items: center; padding: 10px; width: 400px;">
+                    <label style="margin-right: 30px;">Email : </label>
+                    <input style="height: 30px; width: 300px;" type="email" placeholder="ex:mohammad@test.com">
+                </div>
+                <div style="display: flex;align-items: center; padding: 10px; width: 400px;">
+                    <label style="margin-right: 30px;">Message : </label>
+
+                    <textarea style="width: 290px;height:60px ;"></textarea>
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+                
             </form>
+
+
         </section>
     </main>
     <footer>
-        <section id="contactUs">
-            <section>
-                &copy; mohammad smadi
-            </section>
-            <section>
-                social media
-            </section>
-        </section>
+
+        <img src="./assets/microsoft_todo.png" alt="Logo">
+        <div style="display: flex; align-items: center;">
+            <p>Copyright &copy; 2023 mohammad smadi</p>
+        </div>
+
+
+        <div id="contactUs" style="display: flex; align-items: center;justify-content: space-between;">
+            <a href="#" class="fab fa-facebook fa-2x"></a>
+            <a href="#" class="fab fa-twitter fa-2x"></a>
+            <a href="#" class="fab fa-instagram fa-2x"></a>
+
+        </div>
     </footer>
 </body>
 
