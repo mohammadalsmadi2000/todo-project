@@ -6,13 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do</title>
+    <link rel="stylesheet" href="Reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+
+    <!--Get your code at fontawesome.com-->
+
 </head>
 
 <body>
     <header>
+
+        <img src="./assets/microsoft_todo.png">
         <h1>ToDo List</h1>
-        <img src="./assets/smadi.png">
         <nav>
+
             <ul>
                 <li>
                     <a href="/">Home</a>
@@ -27,50 +38,93 @@
         </nav>
     </header>
     <main>
-        <!--This section is for adding an image to the show. You can add the image by changing the src -->
-        <section>
-            <img src="">
+        <!--This section is for adding an image to the show. -->
+        <section class="viewPort">
+
         </section>
 
-        <section>
+        <section class="table-task">
+            <h1>This is a Table Task</h1>
             <table>
                 <tr>
                     <th>Task </th>
                     <th>Status </th>
                 </tr>
                 <tr>
-                    <td>task 1</td>
-                    <td> Done</td>
+                    <div>
+                        <td>
+                            <div class="style-Td">task 1 <input type="checkbox"></div>
+                        </td>
+                        <td class="done"> Done</td>
+                    </div>
+
                 </tr>
                 <tr>
-                    <td>task 2</td>
-                    <td>Done</td>
+                    <div>
+                        <td>
+                            <div class="style-Td">task 1 <input type="checkbox"></div>
+                        </td>
+                        <td class="done"> Done</td>
+                    </div>
                 </tr>
                 <tr>
-                    <td>task 3</td>
-                    <td>In progress</td>
+                    <div>
+                        <td>
+                            <div class="style-Td">task 1 <input type="checkbox"></div>
+                        </td>
+                        <td> In progres </td>
+                    </div>
                 </tr>
             </table>
         </section>
-        <section>
-            <h2>Why use our site (^_^)</h2>
+        <section class="why-use">
+            <div style="display: flex;justify-content: center;margin-bottom: 10px;">
+                <h2>Why use our site (^_^)</h2>
+            </div>
+
             <!--This section is for adding site features. -->
-            <section>
-                <p></p>
-                <p></p>
-                <p></p>
+            <section style="display: flex ;justify-content: space-around;">
+                <!-- <p style="text-align: center;margin-top: 10px;">A productivity powerhouse<br>-->
+
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/7067/7067933.png">
+                    <h3>productivity</h3>
+                    <p>A productivity powerhouse
+                        Simple, flexible, and powerful. All it takes are boards, lists, and cards to get a clear view of
+                        who’s doing what and what needs to get done. </p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/7067/7067933.png">
+                    <h3>productivity</h3>
+                    <p>A productivity powerhouse
+                        Simple, flexible, and powerful. All it takes are boards, lists, and cards to get a clear view of
+                        who’s doing what and what needs to get done.</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/7067/7067933.png">
+                    <h3>productivity</h3>
+                    <p>A productivity powerhouse
+                        Simple, flexible, and powerful. All it takes are boards, lists, and cards to get a clear view of
+                        who’s doing what and what needs to get done.</p>
+                </div>
             </section>
+
         </section>
     </main>
     <footer>
-        <section id="contactUs">
-        <section>
-            &copy; mohammad smadi
-        </section>
-        <section>
-            social media
-        </section>
-    </section>
+
+        <img src="./assets/microsoft_todo.png" alt="Logo">
+        <div style="display: flex; align-items: center;">
+            <p>Copyright &copy; 2023 mohammad smadi</p>
+        </div>
+
+
+        <div id="contactUs" style="display: flex; align-items: center;justify-content: space-between;">
+            <a href="#" class="fab fa-facebook fa-2x"></a>
+            <a href="#" class="fab fa-twitter fa-2x"></a>
+            <a href="#" class="fab fa-instagram fa-2x"></a>
+
+        </div>
     </footer>
 </body>
 
