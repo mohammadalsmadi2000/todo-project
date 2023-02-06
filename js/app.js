@@ -48,8 +48,7 @@ if (
   }else ageFlag = true;
 }
 
-const result =
-  nameFlag && ageFlag ? confirm("Wants to skip the welcoming message ?") : null;
+const result = confirm("Wants to skip the welcoming message ?");
 
 if (!result) {
   let temp;
