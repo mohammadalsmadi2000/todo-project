@@ -29,23 +29,27 @@ if (
   if (isNaN(userAge)) {
     alert("Please enter correct age :");
     userAge = prompt("What is your age?");
-  }
-  ageFlag = true;
+  }else if(userAge<=0){
+    alert("Please enter correct age :");
+    userAge = prompt("What is your age?");
+  }else ageFlag = true;
 } else {
-  alert(
-    "Unfortunately, it seems that you made a mistake!! Remember that in this world that God created, there are only two genders, 'male' and 'female' only!!"
+  confirm(
+    "Are you sure to continue?"
   );
   genderFlag = false;
   userAge = Number(prompt("What is your age?"));
   if (isNaN(userAge)) {
     alert("Please enter correct age :");
     userAge = prompt("What is your age?");
-  }
-  ageFlag = true;
+  }else if(userAge<=0){
+    alert("Please enter correct age :");
+    userAge = prompt("What is your age?");
+  }else ageFlag = true;
 }
 
 const result =
-  nameFlag && ageFlag ? confirm("wants to skip the welcoming message ?") : null;
+  nameFlag && ageFlag ? confirm("Wants to skip the welcoming message ?") : null;
 
 if (!result) {
   let temp;
@@ -54,7 +58,9 @@ if (!result) {
     alert(
       `Welcome to our website, " ${temp}.${userName} "! We're glad you're here. We hope you have a great experience and find everything you're looking for. If you need help, please don't hesitate to reach out to us.`
     );
-  } else confirm("Are you sure to continue?");
+  } else alert(
+    `Welcome to our website, "${userName} "! We're glad you're here. We hope you have a great experience and find everything you're looking for. If you need help, please don't hesitate to reach out to us.`
+  );
 }
 
 !genderFlag && result ? confirm("Are you sure to continue?") : null;
