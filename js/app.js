@@ -167,5 +167,7 @@ function printArray(arr) {
   }
 }
 
+printArray(answersArray);
+
 //My code is following the single responsibility rule. (S)OLID
 //All functions and variables have a meaningful name.
